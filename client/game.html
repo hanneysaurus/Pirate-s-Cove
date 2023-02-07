@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game | Pirate's Cove Online</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="styles/game.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jack-pirate-alt-personal-use">
+</head>
+<body>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="src/cards.js"></script>
+<script>
+    drawPiratecard([4,9,5,1]);
+    drawTaverncard("victory points", ["Ich habe das sagenumwobene Atlantis entdeckt.", 2]);
+    drawTaverncard("royal navy", ["Royal Navy.", "Diese Karte darf nicht auf die Schatzinsel und nicht zu deinem Schiff gelegt werden.", "4 Würfel 4 Treffer zum Besiegen 4 Ruhmpunkte"]);
+    drawTaverncard("upgrade", ["Verstärkung", "Schiffsbereich deiner Wahl. Die Karte wird im Kampf zuerst getroffen.", "1. Karte umdrehen 2. Karte ablegen"])
+    drawTaverncard("special upgrade", ["Neue Crew", "Mannschaftsbereich. Kämpfe mit der Stufe deines Kanonenbereiches. Die Karte wird im Kampf zuerst getroffen.", "1. Karte umdrehen 2. Karte ablegen"])
+    drawTaverncard("combat", ["Enterangriff", "Ab sofort gelten für alle Spieler in diesem Kampf nur die Mannschaftsstufen. Liegt \"Neue Crew\" in deinem Mannschaftsbereich, kämpfst du mit 6 Würfeln."])
+    drawTaverncard("other", ["Herausforderung", "Versetze dein Schiff auf eine andere Insel mit mindestens einem Gegner, jedoch nicht auf die Schatzinsel."])
+</script>
+
+</body>
+</html>
