@@ -166,22 +166,22 @@ function drawTaverncard(type, content) {
                 .attr('y', height / 10)
                 .attr('xlink:href', function (){
                     switch (content[0]){
-                        case "Neue Segel": return '/img/sails.png';
+                        case "Neue Segel": return '/img/sail.png';
                         case "Neue Crew": return '/img/crew.png';
-                        case "Neue Kanonen": return '/img/canons.png';
+                        case "Neue Kanonen": return '/img/cannon.png';
                         case "Neuer Laderaum": return '/img/storage.png';
                     }
                 });
 
             taverncard.append('svg:image')
                 .attr('height', height / 8)
-                .attr('x', 3 * width / 4)
+                .attr('x', 3 * width / 4 - width / 16)
                 .attr('y', height / 10)
                 .attr('xlink:href', function (){
                     switch (content[0]){
-                        case "Neue Segel": return '/img/sails.png';
+                        case "Neue Segel": return '/img/sail.png';
                         case "Neue Crew": return '/img/crew.png';
-                        case "Neue Kanonen": return '/img/canons.png';
+                        case "Neue Kanonen": return '/img/cannon.png';
                         case "Neuer Laderaum": return '/img/storage.png';
                     }
                 });
